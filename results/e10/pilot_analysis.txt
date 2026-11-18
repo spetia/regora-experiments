@@ -1,0 +1,54 @@
+
+tiny seed 11
+  constant halving lr 0.008 test 2.2596 | all: 0.0005:2.516 0.001:2.345 0.002:2.295 0.004:2.230 0.008:2.260 0.016:2.277
+  cosine   halving lr 0.004 test 2.2168 | all: 0.0005:2.627 0.001:2.454 0.002:2.290 0.004:2.217 0.008:2.276 0.016:2.254
+  ctrl start 0.0005  margin 0.0 test 2.2392 steps 2400 lr after each seg: 0.001 0.002 0.004 0.002 0.001 0.0005 0.00025 0.00025
+  ctrl start 0.002   margin 0.0 test 2.2074 steps 2400 lr after each seg: 0.004 0.008 0.004 0.002 0.001 0.0005 0.00025 0.0005
+  ctrl start 0.016   margin 0.0 test 2.2137 steps 2400 lr after each seg: 0.008 0.008 0.004 0.002 0.001 0.0005 0.00025 0.0005
+  ctrl start 0.0005  margin 0.2 test 2.3159 steps 2400 lr after each seg: 0.0005 0.001 0.002 0.002 0.002 0.001 0.0005 0.00025
+  ctrl start 0.002   margin 0.2 test 2.2527 steps 2400 lr after each seg: 0.002 0.004 0.002 0.001 0.001 0.0005 0.00025 0.00025
+  ctrl start 0.016   margin 0.2 test 2.2757 steps 2400 lr after each seg: 0.016 0.016 0.008 0.004 0.002 0.001 0.0005 0.0005
+
+tiny seed 12
+  constant halving lr 0.008 test 2.1915 | all: 0.0005:2.574 0.001:2.439 0.002:2.318 0.004:2.318 0.008:2.191 0.016:2.268
+  cosine   halving lr 0.016 test 2.1966 | all: 0.0005:2.731 0.001:2.526 0.002:2.387 0.004:2.269 0.008:2.274 0.016:2.197
+  ctrl start 0.0005  margin 0.0 test 2.3888 steps 2400 lr after each seg: 0.001 0.002 0.002 0.001 0.001 0.001 0.002 0.001
+  ctrl start 0.002   margin 0.0 test 2.2262 steps 2400 lr after each seg: 0.004 0.008 0.016 0.008 0.004 0.002 0.001 0.0005
+  ctrl start 0.016   margin 0.0 test 2.2647 steps 2400 lr after each seg: 0.008 0.016 0.008 0.004 0.004 0.002 0.001 0.0005
+  ctrl start 0.0005  margin 0.2 test 2.3566 steps 2400 lr after each seg: 0.0005 0.0005 0.001 0.002 0.002 0.002 0.002 0.002
+  ctrl start 0.002   margin 0.2 test 2.3256 steps 2400 lr after each seg: 0.002 0.002 0.002 0.002 0.002 0.001 0.002 0.002
+  ctrl start 0.016   margin 0.2 test 2.2762 steps 2400 lr after each seg: 0.016 0.016 0.008 0.004 0.002 0.001 0.0005 0.0005
+
+base seed 11
+  constant halving lr 0.008 test 2.1496 | all: 0.0005:2.298 0.001:2.248 0.002:2.193 0.004:2.172 0.008:2.150 0.016:2.426
+  cosine   halving lr 0.008 test 2.1390 | all: 0.0005:2.389 0.001:2.259 0.002:2.191 0.004:2.186 0.008:2.139 0.016:2.206
+  ctrl start 0.0005  margin 0.0 test 2.1618 steps 2400 lr after each seg: 0.001 0.002 0.002 0.001 0.0005 0.00025 0.000125 0.000125
+  ctrl start 0.002   margin 0.0 test 2.1261 steps 2400 lr after each seg: 0.004 0.004 0.002 0.001 0.0005 0.00025 0.000125 6.25e-05
+  ctrl start 0.016   margin 0.0 test 2.1569 steps 2400 lr after each seg: 0.008 0.008 0.004 0.002 0.001 0.0005 0.00025 0.00025
+  ctrl start 0.0005  margin 0.2 test 2.2208 steps 2400 lr after each seg: 0.0005 0.001 0.002 0.001 0.0005 0.00025 0.00025 0.00025
+  ctrl start 0.002   margin 0.2 test 2.2174 steps 2400 lr after each seg: 0.002 0.002 0.001 0.0005 0.00025 0.000125 0.00025 0.00025
+  ctrl start 0.016   margin 0.2 test 2.2070 steps 2400 lr after each seg: 0.016 0.008 0.004 0.002 0.002 0.002 0.001 0.001
+
+base seed 12
+  constant halving lr 0.004 test 2.0865 | all: 0.0005:2.233 0.001:2.218 0.002:2.190 0.004:2.086 0.008:2.129 0.016:2.412
+  cosine   halving lr 0.004 test 2.1351 | all: 0.0005:2.355 0.001:2.227 0.002:2.182 0.004:2.135 0.008:2.215 0.016:2.270
+  ctrl start 0.0005  margin 0.0 test 2.1437 steps 2400 lr after each seg: 0.001 0.002 0.004 0.002 0.001 0.001 0.0005 0.00025
+  ctrl start 0.002   margin 0.0 test 2.1733 steps 2400 lr after each seg: 0.004 0.002 0.001 0.002 0.001 0.001 0.0005 0.00025
+  ctrl start 0.016   margin 0.0 test 2.1668 steps 2400 lr after each seg: 0.008 0.004 0.004 0.002 0.001 0.001 0.0005 0.00025
+  ctrl start 0.0005  margin 0.2 test 2.1357 steps 2400 lr after each seg: 0.0005 0.001 0.002 0.001 0.0005 0.0005 0.0005 0.00025
+  ctrl start 0.002   margin 0.2 test 2.1520 steps 2400 lr after each seg: 0.002 0.002 0.002 0.002 0.001 0.001 0.0005 0.00025
+  ctrl start 0.016   margin 0.2 test 2.2640 steps 2400 lr after each seg: 0.016 0.008 0.008 0.004 0.002 0.002 0.002 0.004
+
+deep seed 11
+  constant halving lr 0.002 test 2.0019 | all: 0.0005:2.101 0.001:2.027 0.002:2.002 0.004:2.073 0.008:2.627 0.016:3.081
+  cosine   halving lr 0.002 test 2.0018 | all: 0.0005:2.110 0.001:2.073 0.002:2.002 0.004:2.160 0.008:2.503 0.016:2.755
+  ctrl start 0.0005  margin 0.0 test 2.0358 steps 2400 lr after each seg: 0.001 0.002 0.001 0.0005 0.00025 0.000125 0.000125 6.25e-05
+  ctrl start 0.002   margin 0.0 test 2.0654 steps 2400 lr after each seg: 0.002 0.001 0.0005 0.00025 0.00025 0.000125 0.00025 0.000125
+  ctrl start 0.016   margin 0.0 test 2.3024 steps 2400 lr after each seg: 0.008 0.004 0.002 0.001 0.001 0.0005 0.00025 0.000125
+  ctrl start 0.0005  margin 0.2 test 2.0769 steps 2400 lr after each seg: 0.0005 0.001 0.0005 0.00025 0.00025 0.000125 6.25e-05 3.125e-05
+  ctrl start 0.002   margin 0.2 test 2.0227 steps 2400 lr after each seg: 0.002 0.002 0.001 0.0005 0.0005 0.00025 0.000125 6.25e-05
+  ctrl start 0.016   margin 0.2 test 2.4528 steps 2400 lr after each seg: 0.016 0.008 0.004 0.002 0.001 0.0005 0.001 0.001
+
+margin 0.0 lower test loss than margin 0.2 in 11 of 15 pairs; mean difference -0.0453
+margin 0.0, default start: beats both halving baselines in 2 of 5 cases
+margin 0.2, default start: beats both halving baselines in 0 of 5 cases

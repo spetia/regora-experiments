@@ -1,0 +1,70 @@
+[  291s] tall  healthy    seed 81: at300 2.6068 lean -0.0209
+[  571s] tall  lr_high    seed 81: at300 2.7875 lean -0.2901
+[  856s] tall  lr_low     seed 81: at300 3.0451 lean +0.1084
+[ 1110s] tall  eval_noise seed 81: at300 2.6566 lean -0.0158
+[ 1330s] tall  capacity   seed 81: at300 2.7225 lean -0.0101
+[ 1596s] tall  mild_high  seed 81: at300 2.5441 lean -0.0294
+[ 1883s] tall  mild_low   seed 81: at300 2.7883 lean +0.1475
+[ 2170s] tall  healthy    seed 82: at300 2.6060 lean -0.0150
+[ 2439s] tall  lr_high    seed 82: at300 2.7962 lean -0.3262
+[ 2723s] tall  lr_low     seed 82: at300 2.9848 lean +0.1404
+[ 2983s] tall  eval_noise seed 82: at300 2.4589 lean -0.0552
+[ 3197s] tall  capacity   seed 82: at300 2.7577 lean +0.0374
+[ 3486s] tall  mild_high  seed 82: at300 2.6242 lean -0.0617
+[ 3775s] tall  mild_low   seed 82: at300 2.7814 lean +0.1683
+[ 4046s] tall  healthy    seed 83: at300 2.6223 lean -0.0151
+[ 4331s] tall  lr_high    seed 83: at300 2.6094 lean -0.5257
+[ 4609s] tall  lr_low     seed 83: at300 2.9773 lean +0.1826
+[ 4864s] tall  eval_noise seed 83: at300 2.8596 lean +0.0351
+[ 5088s] tall  capacity   seed 83: at300 2.8125 lean +0.0827
+[ 5373s] tall  mild_high  seed 83: at300 2.5173 lean -0.0413
+[ 5654s] tall  mild_low   seed 83: at300 2.7870 lean +0.1595
+[ 5928s] tall  healthy    seed 84: at300 2.5236 lean -0.0081
+[ 6205s] tall  lr_high    seed 84: at300 2.7970 lean -0.3696
+[ 6488s] tall  lr_low     seed 84: at300 3.0449 lean +0.1311
+[ 6739s] tall  eval_noise seed 84: at300 2.4576 lean +0.0324
+[ 6965s] tall  capacity   seed 84: at300 2.7603 lean +0.0180
+[ 7253s] tall  mild_high  seed 84: at300 2.6696 lean -0.2240
+[ 7531s] tall  mild_low   seed 84: at300 2.7709 lean +0.1410
+[ 7807s] tall  healthy    seed 85: at300 2.5928 lean +0.0205
+[ 8096s] tall  lr_high    seed 85: at300 2.6284 lean -0.2937
+[ 8361s] tall  lr_low     seed 85: at300 3.0524 lean +0.1328
+[ 8616s] tall  eval_noise seed 85: at300 2.5946 lean +0.1537
+[ 8769s] tall  capacity   seed 85: at300 2.8236 lean +0.0120
+[ 8970s] tall  mild_high  seed 85: at300 2.5504 lean -0.0666
+[ 9152s] tall  mild_low   seed 85: at300 2.8283 lean +0.1538
+[ 9352s] tall  healthy    seed 86: at300 2.5633 lean +0.0256
+[ 9552s] tall  lr_high    seed 86: at300 2.8182 lean -0.3263
+[ 9752s] tall  lr_low     seed 86: at300 3.0284 lean +0.1608
+[ 9979s] tall  eval_noise seed 86: at300 2.8181 lean -0.2175
+[10342s] tall  capacity   seed 86: at300 2.6995 lean +0.0142
+[10758s] tall  mild_high  seed 86: at300 2.5665 lean -0.0761
+[11206s] tall  mild_low   seed 86: at300 2.7650 lean +0.1489
+[11653s] tall  healthy    seed 87: at300 2.5630 lean +0.0260
+[12092s] tall  lr_high    seed 87: at300 2.7670 lean -0.4566
+[12555s] tall  lr_low     seed 87: at300 3.0243 lean +0.1772
+[12988s] tall  eval_noise seed 87: at300 2.5158 lean +0.1210
+[13356s] tall  capacity   seed 87: at300 2.8170 lean +0.0501
+[13817s] tall  mild_high  seed 87: at300 2.6291 lean -0.1323
+[14280s] tall  mild_low   seed 87: at300 2.7820 lean +0.1909
+[14750s] tall  healthy    seed 88: at300 2.5434 lean +0.0095
+[15059s] tall  lr_high    seed 88: at300 2.7093 lean -0.4207
+[15347s] tall  lr_low     seed 88: at300 3.0171 lean +0.1638
+[15628s] tall  eval_noise seed 88: at300 2.3606 lean -0.1128
+[15861s] tall  capacity   seed 88: at300 2.7697 lean +0.0134
+[16244s] tall  mild_high  seed 88: at300 2.6814 lean -0.1344
+[16865s] tall  mild_low   seed 88: at300 2.7697 lean +0.1657
+[17477s] tall  healthy    seed 89: at300 2.6670 lean -0.0148
+[18042s] tall  lr_high    seed 89: at300 2.9286 lean -0.6543
+[18649s] tall  lr_low     seed 89: at300 3.0664 lean +0.1500
+[19148s] tall  eval_noise seed 89: at300 2.6715 lean -0.0556
+[19553s] tall  capacity   seed 89: at300 2.8195 lean +0.0559
+[20038s] tall  mild_high  seed 89: at300 2.5946 lean +0.0081
+[20538s] tall  mild_low   seed 89: at300 2.8280 lean +0.1867
+[21012s] tall  healthy    seed 90: at300 2.5752 lean -0.0273
+[21479s] tall  lr_high    seed 90: at300 2.6076 lean -0.4500
+[21962s] tall  lr_low     seed 90: at300 3.0414 lean +0.1465
+[22427s] tall  eval_noise seed 90: at300 2.6135 lean -0.0013
+[22847s] tall  capacity   seed 90: at300 2.8087 lean -0.0085
+[23337s] tall  mild_high  seed 90: at300 2.5310 lean -0.0695
+[23806s] tall  mild_low   seed 90: at300 2.7937 lean +0.1657

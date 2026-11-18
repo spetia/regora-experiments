@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[   227s] nli control         seed 11: accuracy 0.7025
+[   438s] nli half_lr         seed 11: accuracy 0.4670
+[   541s] nli weight_decay    seed 11: accuracy 0.7025
+[   643s] nli label_smoothing seed 11: accuracy 0.6950
+[   764s] nli more_steps      seed 11: accuracy 0.7205

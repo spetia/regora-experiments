@@ -1,0 +1,21 @@
+POST HOC: leave-one-seed-out on E7 itself. Not evidence.
+
+policy        accuracy    cost probes  >=0.9 acc@>=0.9
+EIG_PER_COST      0.94     318   1.46   0.94      0.96
+CHEAPEST          0.94     316   1.44   0.96      0.96
+RANDOM            0.95     747   1.54   0.93      0.96
+ALL               0.96    1922   4.00   0.90      0.98
+PASSIVE           0.72       0   0.00   0.30      1.00
+
+ALL confusion (rows truth, columns diagnosis):
+            capacity eval_nois   healthy   lr_high    lr_low
+capacity          10         0         0         0         0
+eval_noise         0         9         1         0         0
+healthy            0         0        10         0         0
+lr_high            0         0         0        10         0
+lr_low             1         0         0         0         9
+
+H1 diagnosis works (ALL accuracy >= 0.80): SUPPORTED
+H2 selection saves compute: WEAK
+H3 honest confidence (>= 0.85 right when >= 0.9 sure): SUPPORTED
+H4 probes add to watching (ALL - PASSIVE >= 0.10): SUPPORTED

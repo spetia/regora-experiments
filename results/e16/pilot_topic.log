@@ -1,0 +1,4 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[   178s] topic lr1.0_ls0.0_st250 seed 13: accuracy 0.9180
+[   322s] topic lr0.5_ls0.0_st200 seed 13: accuracy 0.9105
+[   532s] topic lr1.41_ls0.1_st300 seed 13: accuracy 0.9220

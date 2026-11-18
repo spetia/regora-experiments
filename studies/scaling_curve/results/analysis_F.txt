@@ -1,0 +1,30 @@
+8 replicates; config {'size': 's1', 'lr': 0.004, 'ckpt_step': 600, 'horizon': 200, 'replicates': 8, 'gated_rounds': 12, 'pairs': 4, 'truth_orders': 12, 'corpus_sha256': '8cbf228846b32b3e4499e901caa5bd9921a829dee59a4cfff68c7823b5b485cc'}
+  naive runs  97 rounds  96 kept  9 (nulls 2) final (0.5702400000000001, 0.0) claimed +0.0436 true +0.0280
+  naive runs  97 rounds  96 kept 14 (nulls 4) final (0.3649536000000001, 0.1) claimed +0.0462 true +0.0353
+  naive runs  97 rounds  96 kept 11 (nulls 1) final (0.5184000000000001, 0.03) claimed +0.0440 true +0.0278
+  naive runs  97 rounds  96 kept  9 (nulls 1) final (0.4665600000000001, 0.03) claimed +0.0510 true +0.0354
+  naive runs  97 rounds  96 kept 12 (nulls 3) final (0.46080000000000015, 0.0) claimed +0.0429 true +0.0357
+  naive runs  97 rounds  96 kept  7 (nulls 0) final (0.40960000000000013, 0.01) claimed +0.0412 true +0.0375
+  naive runs  97 rounds  96 kept 14 (nulls 1) final (0.4055040000000001, 0.0) claimed +0.0484 true +0.0371
+  naive runs  97 rounds  96 kept 11 (nulls 1) final (0.36951552000000015, 0.0) claimed +0.0291 true +0.0227
+  gated runs  96 rounds  12 kept  1 (nulls 0) final (0.9, 0.0) claimed +0.0065 true +0.0069
+  gated runs  96 rounds  12 kept  2 (nulls 1) final (0.8, 0.0) claimed +0.0138 true +0.0130
+  gated runs  96 rounds  12 kept  1 (nulls 0) final (0.9, 0.0) claimed +0.0069 true +0.0055
+  gated runs  96 rounds  12 kept  6 (nulls 0) final (0.5248800000000001, 0.01) claimed +0.0313 true +0.0318
+  gated runs  96 rounds  12 kept  3 (nulls 0) final (0.5760000000000001, 0.0) claimed +0.0320 true +0.0297
+  gated runs  96 rounds  12 kept  4 (nulls 0) final (0.4608000000000001, 0.0) claimed +0.0375 true +0.0349
+  gated runs  96 rounds  12 kept  3 (nulls 1) final (0.7200000000000001, 0.0) claimed +0.0226 true +0.0169
+  gated runs  96 rounds  12 kept  5 (nulls 0) final (0.4665600000000001, 0.0) claimed +0.0268 true +0.0228
+
+##### F1: the keep-if-better loop claims more than it achieved
+  claimed - true: +0.0109 +/- 0.0040  (mean claimed +0.0433, mean true +0.0324) -> SUPPORTED
+
+##### F2: the gated loop's overclaim is at most half of that
+  claimed - true: +0.0020 +/- 0.0018  (mean claimed +0.0222, mean true +0.0202) -> PASS
+
+##### F3: the gate keeps at most 5% of null candidates
+  naive kept 13 of 148 null candidates
+  gated kept 2 of 18 null candidates -> FAIL
+
+##### F4: which loop ends at the better configuration on the same number of runs
+  true gain, gated - naive: -0.0123 +/- 0.0084 -> naive better

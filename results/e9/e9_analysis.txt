@@ -1,0 +1,33 @@
+broad: 31 of 40 (mean cost 1370)
+           eval_nois   healthy   lr_high    lr_low
+eval_noise        10         0         0         0
+healthy            0         1         9         0
+lr_high            0         0        10         0
+lr_low             0         0         0        10
+
+squat: 38 of 40 (mean cost 1370)
+           eval_nois   healthy   lr_high    lr_low
+eval_noise        10         0         0         0
+healthy            0         8         2         0
+lr_high            0         0        10         0
+lr_low             0         0         0        10
+
+tall: 39 of 40 (mean cost 1370)
+           eval_nois   healthy   lr_high    lr_low
+eval_noise        10         0         0         0
+healthy            0         9         1         0
+lr_high            0         0        10         0
+lr_low             0         0         0        10
+
+mild_high: {'lr_high': 19, 'healthy': 11}; right at 100/200/300-step probes: [30, 21, 19] of 30
+mild_low: {'lr_low': 30}; right at 100/200/300-step probes: [15, 25, 30] of 30
+
+H1 mild LR faults (>= 0.70 right, <= 0.10 LR false alarms on healthy): 49 of 60, 12 of 30 false alarms: NOT SUPPORTED
+H2 four conditions (>= 0.85 pooled, >= 0.75 per model): 108 of 120, worst model 78%: SUPPORTED
+H3 LR advice lowers loss 900 steps later (>= 0.80): 108 of 128: SUPPORTED
+
+Reported, not decisive
+E8's t-test in place of sign agreement: 153 of 180 (rule: 157)
+capacity cases read as: {'healthy': 23, 'lr_high': 1, 'lr_low': 6}
+wider-model lead at step 100, healthy: min -0.54 median -0.04 max +0.42
+wider-model lead at step 100, capacity: min -0.96 median -0.35 max +0.21

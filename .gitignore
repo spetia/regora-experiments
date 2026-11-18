@@ -1,0 +1,9 @@
+target/
+Cargo.lock
+.venv/
+__pycache__/
+.DS_Store
+demo/*.pt
+demo/regora.db*
+demo/runs/
+results/*/*_partial.json

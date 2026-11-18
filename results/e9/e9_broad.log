@@ -1,0 +1,70 @@
+[  266s] broad healthy    seed 81: at300 2.4304 lean -0.0973
+[  528s] broad lr_high    seed 81: at300 2.9299 lean -0.4292
+[  779s] broad lr_low     seed 81: at300 2.8031 lean +0.2266
+[ 1032s] broad eval_noise seed 81: at300 2.4980 lean -0.0804
+[ 1137s] broad capacity   seed 81: at300 2.6667 lean -0.0192
+[ 1364s] broad mild_high  seed 81: at300 3.0199 lean -0.0608
+[ 1619s] broad mild_low   seed 81: at300 2.5758 lean +0.0742
+[ 1886s] broad healthy    seed 82: at300 2.4360 lean -0.0899
+[ 2151s] broad lr_high    seed 82: at300 3.0269 lean -0.3220
+[ 2401s] broad lr_low     seed 82: at300 2.8472 lean +0.2570
+[ 2646s] broad eval_noise seed 82: at300 2.3014 lean -0.1346
+[ 2761s] broad capacity   seed 82: at300 2.6352 lean -0.0392
+[ 3022s] broad mild_high  seed 82: at300 2.7928 lean -0.0972
+[ 3230s] broad mild_low   seed 82: at300 2.6249 lean +0.0823
+[ 3496s] broad healthy    seed 83: at300 2.3945 lean -0.0809
+[ 3760s] broad lr_high    seed 83: at300 3.0891 lean -0.3017
+[ 4014s] broad lr_low     seed 83: at300 2.8016 lean +0.2350
+[ 4257s] broad eval_noise seed 83: at300 2.6957 lean -0.0133
+[ 4368s] broad capacity   seed 83: at300 2.5660 lean -0.0068
+[ 4637s] broad mild_high  seed 83: at300 3.0228 lean -0.0516
+[ 4886s] broad mild_low   seed 83: at300 2.6083 lean +0.0892
+[ 5111s] broad healthy    seed 84: at300 2.3742 lean -0.0317
+[ 5378s] broad lr_high    seed 84: at300 2.8996 lean -0.3577
+[ 5645s] broad lr_low     seed 84: at300 2.7888 lean +0.2108
+[ 5874s] broad eval_noise seed 84: at300 2.2922 lean +0.0082
+[ 5982s] broad capacity   seed 84: at300 2.6418 lean +0.0288
+[ 6249s] broad mild_high  seed 84: at300 2.9500 lean -0.0946
+[ 6516s] broad mild_low   seed 84: at300 2.5587 lean +0.0797
+[ 6765s] broad healthy    seed 85: at300 2.4167 lean -0.1031
+[ 6993s] broad lr_high    seed 85: at300 3.0608 lean -0.2975
+[ 7260s] broad lr_low     seed 85: at300 2.8280 lean +0.2262
+[ 7488s] broad eval_noise seed 85: at300 2.4266 lean +0.0390
+[ 7600s] broad capacity   seed 85: at300 2.6238 lean +0.0009
+[ 7866s] broad mild_high  seed 85: at300 2.7091 lean -0.1018
+[ 8131s] broad mild_low   seed 85: at300 2.6018 lean +0.0767
+[ 8384s] broad healthy    seed 86: at300 2.3997 lean -0.1232
+[ 8627s] broad lr_high    seed 86: at300 3.0950 lean -0.3801
+[ 8782s] broad lr_low     seed 86: at300 2.7589 lean +0.1706
+[ 8968s] broad eval_noise seed 86: at300 2.6901 lean -0.3450
+[ 9042s] broad capacity   seed 86: at300 2.5337 lean +0.0000
+[ 9239s] broad mild_high  seed 86: at300 3.0468 lean -0.2173
+[ 9435s] broad mild_low   seed 86: at300 2.5703 lean +0.0789
+[ 9631s] broad healthy    seed 87: at300 2.4664 lean -0.1024
+[ 9825s] broad lr_high    seed 87: at300 2.8891 lean -0.4561
+[10102s] broad lr_low     seed 87: at300 2.8356 lean +0.2235
+[10436s] broad eval_noise seed 87: at300 2.3826 lean +0.0094
+[10607s] broad capacity   seed 87: at300 2.6103 lean +0.0259
+[10987s] broad mild_high  seed 87: at300 2.6731 lean -0.2141
+[11374s] broad mild_low   seed 87: at300 2.5579 lean +0.0946
+[11759s] broad healthy    seed 88: at300 2.4158 lean -0.1087
+[12132s] broad lr_high    seed 88: at300 3.0644 lean -0.3793
+[12530s] broad lr_low     seed 88: at300 2.8348 lean +0.2548
+[12909s] broad eval_noise seed 88: at300 2.2288 lean -0.2812
+[13074s] broad capacity   seed 88: at300 2.7033 lean -0.0207
+[13436s] broad mild_high  seed 88: at300 2.9993 lean -0.2192
+[13830s] broad mild_low   seed 88: at300 2.5754 lean +0.0567
+[14223s] broad healthy    seed 89: at300 2.4671 lean -0.0744
+[14626s] broad lr_high    seed 89: at300 3.0873 lean -0.3257
+[14948s] broad lr_low     seed 89: at300 2.8775 lean +0.2478
+[15208s] broad eval_noise seed 89: at300 2.5094 lean -0.0924
+[15322s] broad capacity   seed 89: at300 2.6388 lean +0.0322
+[15604s] broad mild_high  seed 89: at300 3.0067 lean -0.0430
+[15843s] broad mild_low   seed 89: at300 2.6842 lean +0.0641
+[16143s] broad healthy    seed 90: at300 2.3640 lean -0.1019
+[16667s] broad lr_high    seed 90: at300 2.9647 lean -0.4160
+[17191s] broad lr_low     seed 90: at300 2.7794 lean +0.1745
+[17660s] broad eval_noise seed 90: at300 2.4342 lean -0.0822
+[17884s] broad capacity   seed 90: at300 2.5646 lean -0.0148
+[18383s] broad mild_high  seed 90: at300 2.6843 lean -0.1028
+[18894s] broad mild_low   seed 90: at300 2.6052 lean +0.0694

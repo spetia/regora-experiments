@@ -1,0 +1,5 @@
+[    50s] vision healthy    seed 11: at checkpoint 2.8458 lean -0.4989
+[    83s] vision lr_low     seed 11: at checkpoint 3.1539 lean -0.0211
+[   116s] vision mild_low   seed 11: at checkpoint 2.7323 lean -0.3682
+[   150s] vision mild_high  seed 11: at checkpoint 2.7391 lean -0.3497
+[   180s] vision eval_noise seed 11: at checkpoint 2.8979 lean -0.6698

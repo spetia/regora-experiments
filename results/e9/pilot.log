@@ -1,0 +1,52 @@
+tune tiny lr 0.001: 2.7984
+tune tiny lr 0.002: 2.7369
+tune tiny lr 0.004: 2.6048
+tune tiny lr 0.008: 2.5063
+tune base lr 0.001: 2.6685
+tune base lr 0.002: 2.5249
+tune base lr 0.004: 2.4631
+tune base lr 0.008: 2.4768
+tune tiny/narrow lr 0.001: 3.4196
+tune tiny/narrow lr 0.002: 3.0459
+tune tiny/narrow lr 0.004: 2.8768
+tune tiny/narrow lr 0.008: 2.8067
+tune base/narrow lr 0.001: 3.0580
+tune base/narrow lr 0.002: 2.9009
+tune base/narrow lr 0.004: 2.8272
+tune base/narrow lr 0.008: 2.7581
+[   23s] tiny  healthy    seed 11: at300 2.5097 lean +0.0035
+[   46s] tiny  lr_high    seed 11: at300 2.8005 lean -0.9553
+[   68s] tiny  lr_low     seed 11: at300 2.9099 lean +0.0698
+[   93s] tiny  capacity   seed 11: at300 2.8047 lean +0.0168
+[  116s] tiny  mild_high  seed 11: at300 2.5986 lean -0.1091
+[  138s] tiny  mild_low   seed 11: at300 2.6605 lean +0.1535
+[  161s] tiny  healthy    seed 12: at300 2.6479 lean +0.0035
+[  184s] tiny  lr_high    seed 12: at300 2.9115 lean -1.0651
+[  206s] tiny  lr_low     seed 12: at300 2.9954 lean +0.1019
+[  231s] tiny  capacity   seed 12: at300 2.9035 lean +0.0262
+[  254s] tiny  mild_high  seed 12: at300 2.7515 lean -0.1840
+[  277s] tiny  mild_low   seed 12: at300 2.8116 lean +0.0769
+[  299s] tiny  healthy    seed 13: at300 2.6500 lean -0.0331
+[  322s] tiny  lr_high    seed 13: at300 2.9142 lean -0.8395
+[  345s] tiny  lr_low     seed 13: at300 2.8902 lean +0.0250
+[  370s] tiny  capacity   seed 13: at300 2.8419 lean +0.0420
+[  392s] tiny  mild_high  seed 13: at300 2.6988 lean -0.1233
+[  415s] tiny  mild_low   seed 13: at300 2.7409 lean +0.1830
+[  457s] base  healthy    seed 11: at300 2.4855 lean -0.0078
+[  499s] base  lr_high    seed 11: at300 2.6925 lean -0.4738
+[  542s] base  lr_low     seed 11: at300 2.9251 lean +0.1695
+[  580s] base  capacity   seed 11: at300 2.7500 lean -0.0091
+[  622s] base  mild_high  seed 11: at300 2.5575 lean -0.0476
+[  664s] base  mild_low   seed 11: at300 2.7169 lean +0.1113
+[  706s] base  healthy    seed 12: at300 2.6324 lean -0.0199
+[  748s] base  lr_high    seed 12: at300 2.8084 lean -0.7001
+[  791s] base  lr_low     seed 12: at300 2.9356 lean +0.1438
+[  829s] base  capacity   seed 12: at300 2.8011 lean +0.0011
+[  871s] base  mild_high  seed 12: at300 2.5706 lean -0.0496
+[  914s] base  mild_low   seed 12: at300 2.8112 lean +0.1759
+[  956s] base  healthy    seed 13: at300 2.5698 lean -0.0022
+[  998s] base  lr_high    seed 13: at300 2.7816 lean -0.5991
+[ 1040s] base  lr_low     seed 13: at300 2.9335 lean +0.1357
+[ 1078s] base  capacity   seed 13: at300 2.7980 lean +0.0584
+[ 1120s] base  mild_high  seed 13: at300 2.6303 lean -0.0811
+[ 1163s] base  mild_low   seed 13: at300 2.7636 lean +0.1306

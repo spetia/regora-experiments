@@ -1,0 +1,7 @@
+MEASURED 2026-11-11, CPU (while E2 used the GPU), TinyGPT, checkpoint = 200 steps at lr 1e-3 (init 0, data seed 0).
+Command: regora run demo/lr.json --caps demo/caps.json -- python regora_trainer.py   (16 runs, 5m43s wall)
+
+val_loss (treatment - control, final reading, paired by seed)
+  lr 2e-3          diff +0.00685  95% CI [-0.00220, +0.01590]  sd 0.00569  n 4  missing 0  -> not distinguishable from control
+  lr 5e-4          diff +0.03271  95% CI [-0.00384, +0.06927]  sd 0.02298  n 4  missing 0  -> not distinguishable from control
+  wd 0.1           diff +0.00158  95% CI [+0.00088, +0.00228]  sd 0.00044  n 4  missing 0  -> differs from control

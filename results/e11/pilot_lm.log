@@ -1,0 +1,5 @@
+[   223s] lm healthy    seed 11: at checkpoint 1.3042 lean -0.0759
+[   372s] lm lr_low     seed 11: at checkpoint 1.6797 lean +0.0102
+[   521s] lm mild_low   seed 11: at checkpoint 1.4094 lean -0.0385
+[   670s] lm mild_high  seed 11: at checkpoint 2.8201 lean -0.2991
+[   804s] lm eval_noise seed 11: at checkpoint 1.3164 lean -0.1001

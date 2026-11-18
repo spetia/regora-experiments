@@ -1,0 +1,10 @@
+[   40s] ds 0
+[   81s] ds 1
+[  121s] ds 2
+[  162s] ds 3
+device mps: sigma_nd 0.00000; any bitwise-identical repeat pair: False; MDE(n=8, both arms noisy) 0.00000
+  wd01: |effect| 0.0011 survives: True
+  wd10: |effect| 0.0133 survives: True
+  clip025: |effect| 0.0093 survives: True
+  lr2x: |effect| 0.0382 survives: True
+  lr05: |effect| 0.0246 survives: True

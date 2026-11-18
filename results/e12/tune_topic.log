@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+tune lr 5e-06: 0.6630
+tune lr 1e-05: 0.7320
+tune lr 2e-05: 0.8490
+tune lr 4e-05: 0.8870
+tune lr 8e-05: 0.9060
+tune lr 0.00016: 0.9160
+tune lr 0.00032: 0.9250
+tune lr 0.00064: 0.9250
+tune lr 0.00128: 0.9030
+tune lr 0.00256: 0.6030

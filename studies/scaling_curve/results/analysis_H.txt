@@ -1,0 +1,65 @@
+H_s2_reweight: 4,902,912 params, lr 0.002, checkpoint 1500, K=3 S=6, 58 min; pi_S all 1.0000, encodings 0.1318, idlelib 0.1162, toplevel 0.3983, asyncio 0.0482, test 0.0690
+replication of stage G's control (checkpoint losses and 90 readings): largest |difference| 0
+
+arm      anneal  100 anneal  200 anneal  400  const  100  const  200   (mean effect, loss)
+null8w      +0.00000    +0.00000    +0.00000    +0.00000    +0.00000
+enc8w       +0.01103    +0.01331    +0.01535    +0.02197    +0.01812
+enc2w       +0.00112    +0.00178    +0.00241    +0.00008    +0.00108
+idle8w      +0.02221    +0.02374    +0.02577    +0.05102    +0.05131
+top8w       +0.00199    +0.00139    +0.00056    +0.00796    +0.00814
+async8w     +0.03942    +0.03875    +0.03851    +0.10088    +0.08559
+test8w      +0.03452    +0.03443    +0.03334    +0.09435    +0.07714
+
+arm      anneal  100 anneal  200 anneal  400  const  100  const  200   (seeds saved by pairing)
+null8w           inf         inf         inf         inf         inf
+enc8w            3.7         6.6         2.6         1.4         2.8
+enc2w           59.8        50.3        27.3         5.1         8.9
+idle8w           2.5         7.0         3.2         1.2         1.6
+top8w           13.3        36.7         7.0         3.4         5.8
+async8w          1.6         2.0         1.7         1.2         1.3
+test8w           1.1         2.7         1.6         1.1         1.1
+
+arm      anneal  100 anneal  200 anneal  400  const  100  const  200   (paired runs per arm for 80% power)
+null8w           inf         inf         inf         inf         inf
+enc8w              2           2           2           2           2
+enc2w              2           2           2        6014          23
+idle8w             2           2           2           2           2
+top8w              2           2          15           2           2
+async8w            2           2           2           2           2
+test8w             2           2           2           2           2
+
+arm      anneal  100 anneal  200 anneal  400  const  100  const  200   (unpaired runs per arm for 80% power)
+null8w           inf         inf         inf         inf         inf
+enc8w              2           2           2           2           2
+enc2w             33          13           5       30705         205
+idle8w             2           2           2           2           2
+top8w             13          21         104           3           4
+async8w            2           2           2           2           2
+test8w             2           2           2           2           2
+
+##### micro-anneal 200: re-weighted against swapped (stage G), per arm
+  arm       effect rw  effect sw  rw/sw  saved rw  saved sw runs sw/rw
+  enc8       +0.01331   +0.01208   1.10       6.6       4.2        1.9
+  enc2       +0.00178   +0.00279   0.64      50.3      12.8        1.6
+  idle8      +0.02374   +0.01093   2.17       7.0       3.0        8.4
+  top8       +0.00139   -0.00247  -0.56      36.7       1.7        4.8
+  async8     +0.03875   +0.01105   3.51       2.0       2.8        4.2
+  test8      +0.03443   +0.00754   4.57       2.7       5.7        5.5
+  H1, paired runs needed, swapped / re-weighted, geometric mean: 3.8 -> INCONCLUSIVE
+  H2, re-weighted effect / swapped effect: all six in [0.5, 2]? -> REJECTED
+  H1 is not claimed: H2 is rejected (PLAN_H.md).
+
+##### constant-LR 200: re-weighted against swapped (stage G), per arm
+  arm       effect rw  effect sw  rw/sw  saved rw  saved sw runs sw/rw
+  enc8       +0.01812   +0.01514   1.20       2.8       1.8        1.9
+  enc2       +0.00108   +0.00333   0.32       8.9       5.6        0.2
+  idle8      +0.05131   +0.01316   3.90       1.6       2.6        3.5
+  top8       +0.00814   -0.00367  -2.22       5.8       1.9       12.7
+  async8     +0.08559   +0.01274   6.72       1.3       2.5        3.5
+  test8      +0.07714   +0.00915   8.43       1.1       2.2       13.1
+  H1, paired runs needed, swapped / re-weighted, geometric mean: 3.1 (reported only: INCONCLUSIVE)
+  H2, re-weighted effect / swapped effect: all six in [0.5, 2]? (reported only: REJECTED)
+
+Spearman with stage G's truth (long-1600), proxy and truth on disjoint orders, mean of both splits:
+  re-weighted anneal-200   +0.83
+  swapped anneal-200       +0.83

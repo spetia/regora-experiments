@@ -1,0 +1,11 @@
+Post hoc. Runs per arm for 80% power (unpaired / paired); '!' marks a reading whose mean effect points against the truth.
+
+arm          truth     anneal-100    anneal-200    anneal-400     const-100     const-200     const-400
+enc8     +0.01924        2/   2        2/   2        2/   2        2/   2        2/   2        2/   2 
+enc2     +0.00449       12/   2        5/   2        3/   2       27/   7       29/   5        7/   2 
+idle8    +0.02081        2/   2        2/   2        2/   2        2/   2        2/   2        2/   2 
+top8     -0.00400        7/   3        5/   3        4/   2       16/   9       16/   8       15/  13 
+async8   +0.02238        2/   2        2/   2        2/   2        2/   2        2/   2        2/   2 
+test8    +0.01682        2/   2        2/   2        2/   2        4/   3        3/   2        2/   2 
+
+geomean               3.3/ 2.2     2.7/ 2.1     2.4/ 2.0     5.0/ 3.4     4.8/ 3.0     3.4/ 2.8 

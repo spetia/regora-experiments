@@ -1,0 +1,15 @@
+configs (lr, warmup): [(0.001, 50), (0.001, 300), (0.002, 50), (0.002, 300), (0.004, 50), (0.004, 300), (0.008, 50), (0.008, 300)]
+seed-mean final: [2.5528 2.63   2.3669 2.431  2.2771 2.2963 2.2676 2.2563]
+seed SD of final: [0.0271, 0.0256, 0.0316, 0.0178, 0.0103, 0.0296, 0.0077, 0.0237]
+non-finite runs: 0
+crossing pairs: 9 of 28
+h=250: tau +0.71 regret 0.0113 picked (0.008, 50)
+h=350: tau +0.71 regret 0.0208 picked (0.004, 50)
+h=500: tau +0.86 regret 0.0208 picked (0.004, 50)
+h=750: tau +1.00 regret 0.0000 picked (0.008, 300)
+
+successive halving (8->4@250->2@500->1@750) per seed, ranked by that seed only
+  seed 0: pick (0.008, 300) regret 0.0000
+  seed 1: pick (0.008, 50) regret 0.0113
+  seed 2: pick (0.004, 50) regret 0.0208
+mean regret 0.0107; compute fraction 0.469

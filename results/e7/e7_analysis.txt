@@ -1,0 +1,21 @@
+50 cases, 10 seeds, chance 0.20
+
+policy        accuracy    cost probes  >=0.9 acc@>=0.9
+EIG_PER_COST      0.68    1922   4.00   0.12      1.00
+EIG               0.68    1922   4.00   0.12      1.00
+CHEAPEST          0.68    1922   4.00   0.12      1.00
+RANDOM            0.68    1922   4.00   0.12      1.00
+ALL               0.68    1922   4.00   0.12      1.00
+PASSIVE           0.58      43   2.00   0.00       nan
+
+ALL confusion (rows truth, columns diagnosis):
+            capacity eval_nois   healthy   lr_high    lr_low
+capacity           4         1         2         0         3
+eval_noise         1         7         0         2         0
+healthy            2         1         7         0         0
+lr_high            0         1         1         8         0
+lr_low             1         1         0         0         8
+
+H1 diagnosis works (ALL accuracy >= 0.80): NOT SUPPORTED
+H2 selection saves compute: NOT SUPPORTED
+H3 honest confidence (>= 0.85 right when >= 0.9 sure): SUPPORTED

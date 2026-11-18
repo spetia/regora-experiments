@@ -1,0 +1,22 @@
+
+topic: 20 seeds, 2000 items
+  control accuracy 0.9183, SD across seeds 0.0035; SE from 2000 items 0.0061
+  same settings, different seed: item interval excludes zero in 20 of 190 pairs (11%; 5% expected if training noise did not matter); item pairing saves 4.7x
+  arm              items saved  seeds saved  mean diff  95% interval (seeds)   1-seed verdicts
+  half_lr                5.3x         1.2x  -0.0047    [-0.0064, -0.0029]     5 of 20 significant, 18 match the sign of the mean
+  prompt                 6.8x         1.1x  -0.0018    [-0.0041, +0.0006]     4 of 20 significant, 15 match the sign of the mean
+  label_smoothing        6.3x         0.9x  +0.0027    [+0.0007, +0.0047]     4 of 20 significant, 15 match the sign of the mean
+  more_steps             8.6x         1.6x  +0.0004    [-0.0014, +0.0023]     4 of 20 significant, 11 match the sign of the mean
+
+nli: 20 seeds, 2000 items
+  control accuracy 0.7833, SD across seeds 0.0083; SE from 2000 items 0.0092
+  same settings, different seed: item interval excludes zero in 36 of 190 pairs (19%; 5% expected if training noise did not matter); item pairing saves 2.3x
+  arm              items saved  seeds saved  mean diff  95% interval (seeds)   1-seed verdicts
+  half_lr                2.5x         0.8x  +0.0219    [+0.0164, +0.0273]     13 of 20 significant, 20 match the sign of the mean
+  prompt                 2.4x         0.9x  -0.0027    [-0.0109, +0.0055]     4 of 20 significant, 10 match the sign of the mean
+  label_smoothing        2.5x         1.4x  +0.0017    [-0.0043, +0.0078]     5 of 20 significant, 10 match the sign of the mean
+  more_steps             2.6x         0.9x  -0.0083    [-0.0336, +0.0171]     5 of 20 significant, 8 match the sign of the mean
+
+H1 scoring both models on the same items saves at least 2x items for every change on every task: SUPPORTED
+H2 two fine-tunes that differ only in seed look different to the item interval in at least 10% of pairs on every task: SUPPORTED
+H3 sharing the training seed saves at least 2x seeds for every change on every task: NOT SUPPORTED

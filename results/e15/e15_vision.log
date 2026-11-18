@@ -1,0 +1,7 @@
+[   262s] vision healthy    seed 201: at checkpoint 2.6885 lean -0.4699
+[   423s] vision low_and_noisy seed 201: at checkpoint 3.2570 lean -0.0555
+[   584s] vision high_and_noisy seed 201: at checkpoint 2.6641 lean -0.3874
+[   761s] vision heavy_decay seed 201: at checkpoint 2.9430 lean -0.6186
+[   937s] vision low_and_decay seed 201: at checkpoint 3.3346 lean -0.0979
+[  1199s] vision healthy    seed 202: at checkpoint 2.6604 lean -0.4349
+[  1360s] vision low_and_noisy seed 202: at checkpoint 3.1566 lean +0.0423

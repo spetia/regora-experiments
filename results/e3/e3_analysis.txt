@@ -1,0 +1,16 @@
+results/e3/e3.json: 9 configs, 8 seeds, 56 subsets of 3
+all-seed mean final: {'(0.002, 50)': np.float64(2.3932), '(0.002, 200)': np.float64(2.3978), '(0.002, 400)': np.float64(2.4379), '(0.004, 50)': np.float64(2.2773), '(0.004, 200)': np.float64(2.3055), '(0.004, 400)': np.float64(2.3114), '(0.008, 50)': np.float64(2.2828), '(0.008, 200)': np.float64(2.235), '(0.008, 400)': np.float64(2.2569)}
+seed SD of final: [0.0247 0.0268 0.0338 0.0252 0.0266 0.0323 0.0174 0.0239 0.0387]
+random-pick regret (all seeds): 0.0870
+crossing pairs: 15 of 36
+
+selector                  compute   regret  P(best)
+FIXED(250, 500, 750)        0.444   0.0028     0.95
+FIXED(250, 500, 1000)       0.472   0.0028     0.95
+FIXED(250, 750, 1000)       0.528   0.0000     1.00
+AWARE                       0.583   0.0062     0.88
+FIXED(500, 750, 1000)       0.667   0.0014     0.96
+FULL                        1.000   0.0034     0.91
+
+H1: late-cut regret 0.0000 vs early-cut 0.0028 -> NOT confirmed
+H2: AWARE vs comparable fixed schedules ['FIXED(250, 500, 1000)', 'FIXED(250, 500, 750)', 'FIXED(250, 750, 1000)'] -> WORSE

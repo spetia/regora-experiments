@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[   177s] topic control         seed 11: accuracy 0.9015
+[   353s] topic half_lr         seed 11: accuracy 0.8915
+[   518s] topic weight_decay    seed 11: accuracy 0.9015
+[   694s] topic label_smoothing seed 11: accuracy 0.9035
+[   903s] topic more_steps      seed 11: accuracy 0.9070

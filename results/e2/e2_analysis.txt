@@ -1,0 +1,15 @@
+results/e2.json: 8 configs, 8 seeds, 56 subsets of 3; t-crit 2.92
+truth (all-seed mean final): {'(0.001, 50)': np.float64(2.5457), '(0.001, 300)': np.float64(2.5996), '(0.002, 50)': np.float64(2.3966), '(0.002, 300)': np.float64(2.4279), '(0.004, 50)': np.float64(2.2905), '(0.004, 300)': np.float64(2.32), '(0.008, 50)': np.float64(2.3002), '(0.008, 300)': np.float64(2.269)}
+seed SD of final: [0.0302 0.0274 0.0309 0.0315 0.0278 0.03   0.0452 0.031 ]
+random-pick regret: 0.1246
+SD of config differences at step 250, median over pairs: paired 0.0477, unpaired 0.0744
+
+selector                compute   regret  P(best)
+F3                        0.466   0.0180     0.27
+SH(250, 500, 750)         0.469   0.0159     0.34
+SH(250, 500, 1000)        0.500   0.0149     0.43
+SH(250, 750, 1000)        0.562   0.0011     0.96
+SH(500, 750, 1000)        0.688   0.0011     0.96
+FULL                      1.000   0.0000     1.00
+
+F3 dominated by: none  ->  F3 SUPPORTED by the pre-registered rule

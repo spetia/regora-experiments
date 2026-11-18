@@ -1,0 +1,1 @@
+{"config": {"task": "topic", "model": "HuggingFaceTB/SmolLM2-360M", "device": "cuda", "exact": true, "gpu": "NVIDIA A10G", "torch": "2.15.0+cu132"}, "lr": 0.00032, "scores": {"5e-06": 0.663, "1e-05": 0.732, "2e-05": 0.849, "4e-05": 0.887, "8e-05": 0.906, "0.00016": 0.916, "0.00032": 0.925, "0.00064": 0.925}}

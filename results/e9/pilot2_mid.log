@@ -1,0 +1,28 @@
+tune mid lr 0.001: 2.3639
+tune mid lr 0.002: 2.3121
+tune mid lr 0.004: 2.4523
+tune mid lr 0.008: 2.7825
+tune mid lr 0.016: 2.8840
+tune mid/narrow lr 0.001: 2.8176
+tune mid/narrow lr 0.002: 2.7384
+tune mid/narrow lr 0.004: 2.6346
+tune mid/narrow lr 0.008: 2.5973
+tune mid/narrow lr 0.016: 2.5941
+[  286s] mid   healthy    seed 11: at300 2.3734 lean -0.0602
+[  399s] mid   capacity   seed 11: at300 2.5936 lean -0.0648
+[  665s] mid   mild_high  seed 11: at300 2.4791 lean -0.1938
+[  959s] mid   mild_low   seed 11: at300 2.5300 lean +0.0765
+[ 1253s] mid   lr_low     seed 11: at300 2.8061 lean +0.2130
+[ 1546s] mid   lr_high    seed 11: at300 2.8403 lean -0.4911
+[ 1840s] mid   healthy    seed 12: at300 2.4535 lean -0.0575
+[ 1970s] mid   capacity   seed 12: at300 2.7019 lean +0.0129
+[ 2211s] mid   mild_high  seed 12: at300 2.6640 lean -0.1565
+[ 2505s] mid   mild_low   seed 12: at300 2.6524 lean +0.0760
+[ 2799s] mid   lr_low     seed 12: at300 2.8329 lean +0.2175
+[ 3092s] mid   lr_high    seed 12: at300 2.9714 lean -0.3314
+[ 3449s] mid   healthy    seed 13: at300 2.4286 lean -0.0661
+[ 3668s] mid   capacity   seed 13: at300 2.6588 lean -0.0526
+[ 3988s] mid   mild_high  seed 13: at300 2.7685 lean -0.0470
+[ 4285s] mid   mild_low   seed 13: at300 2.6168 lean +0.0849
+[ 4581s] mid   lr_low     seed 13: at300 2.7957 lean +0.2065
+[ 4878s] mid   lr_high    seed 13: at300 2.9739 lean -0.3112

@@ -1,0 +1,8 @@
+{"question": "From the step-200 checkpoint, does changing the learning rate (base 1e-3) lower val loss 100 steps later?",
+ "base_checkpoint": "demo/ckpt200.pt",
+ "control": {"name": "lr 1e-3", "interventions": []},
+ "treatments": [{"name": "lr 2e-3", "interventions": [{"kind": "SetLearningRate", "value": 0.002}]},
+                {"name": "lr 5e-4", "interventions": [{"kind": "SetLearningRate", "value": 0.0005}]},
+                {"name": "wd 0.1", "interventions": [{"kind": "SetWeightDecay", "value": 0.1}]}],
+ "seeds": [1, 2, 3, 4],
+ "eval": {"metric": "val_loss", "horizon_steps": 100, "eval_every": 50}}

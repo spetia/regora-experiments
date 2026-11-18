@@ -1,0 +1,12 @@
+round 0 order ('none', 'sync', 'record'): none 66.94 ms/step  sync 60.92 ms/step  record 60.74 ms/step
+round 1 order ('sync', 'record', 'none'): none 62.57 ms/step  sync 60.83 ms/step  record 60.48 ms/step
+round 2 order ('record', 'none', 'sync'): none 60.67 ms/step  sync 60.82 ms/step  record 60.71 ms/step
+round 3 order ('none', 'sync', 'record'): none 61.02 ms/step  sync 64.32 ms/step  record 61.98 ms/step
+round 4 order ('sync', 'record', 'none'): none 60.37 ms/step  sync 61.20 ms/step  record 60.69 ms/step
+round 5 order ('record', 'none', 'sync'): none 60.40 ms/step  sync 61.37 ms/step  record 60.54 ms/step
+round 6 order ('none', 'sync', 'record'): none 60.49 ms/step  sync 61.09 ms/step  record 60.53 ms/step
+median ms/step: {'none': 60.584, 'sync': 61.146, 'record': 60.616}
+telemetry_overhead: -1.25%  95% CI [-2.54%, +0.05%]
+sync_overhead: +1.14%  95% CI [-1.63%, +3.91%]
+records per run: {'recorded': 400, 'dropped': 0, 'write_errors': 0}
+telemetry overhead: LOW by the pre-registered rule

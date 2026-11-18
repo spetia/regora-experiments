@@ -1,0 +1,29 @@
+deep: label-free rule 34 of 50 (mean cost 1222); fitted on E7 32 of 50
+            capacity eval_nois   healthy   lr_high    lr_low
+capacity           4         0         0         0         6
+eval_noise         0        10         0         0         0
+healthy            9         0         1         0         0
+lr_high            0         0         1         9         0
+lr_low             0         0         0         0        10
+
+mid: label-free rule 45 of 50 (mean cost 1478); fitted on E7 35 of 50
+            capacity eval_nois   healthy   lr_high    lr_low
+capacity           9         0         0         0         1
+eval_noise         0        10         0         0         0
+healthy            0         0        10         0         0
+lr_high            0         0         3         7         0
+lr_low             1         0         0         0         9
+
+tiny: label-free rule 44 of 50 (mean cost 1414); fitted on E7 42 of 50
+            capacity eval_nois   healthy   lr_high    lr_low
+capacity           7         0         3         0         0
+eval_noise         0        10         0         0         0
+healthy            2         0         8         0         0
+lr_high            0         0         0        10         0
+lr_low             1         0         0         0         9
+
+pooled: label-free rule 123 of 150; fitted on E7 109 of 150
+mild LR faults (reported, not decisive): 26 of 60; {('lr_high', 'healthy'): 19, ('lr_low', 'capacity'): 15, ('lr_high', 'lr_high'): 11, ('lr_low', 'lr_low'): 15}
+
+H1 label-free diagnosis works (>= 0.80 pooled, >= 0.70 per model): NOT SUPPORTED
+H2 beats likelihoods fitted on another model by >= 0.10: NOT SUPPORTED

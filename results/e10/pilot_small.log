@@ -1,0 +1,4 @@
+[  1129s] tiny  seed 11: best cosine 2.2168 at 0.004; controlled 2.2392 2.2074 2.2137 2.3159 2.2527 2.2757
+[  2271s] tiny  seed 12: best cosine 2.1966 at 0.016; controlled 2.3888 2.2262 2.2647 2.3566 2.3256 2.2762
+[  4329s] base  seed 11: best cosine 2.1390 at 0.008; controlled 2.1618 2.1261 2.1569 2.2208 2.2174 2.2070
+[  6000s] base  seed 12: best cosine 2.1351 at 0.004; controlled 2.1437 2.1733 2.1668 2.1357 2.1520 2.2640

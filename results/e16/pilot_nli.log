@@ -1,0 +1,4 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[   228s] nli lr1.0_ls0.0_st250 seed 13: accuracy 0.7855
+[   412s] nli lr0.5_ls0.0_st200 seed 13: accuracy 0.8005
+[   599s] nli lr1.41_ls0.1_st300 seed 13: accuracy 0.6050

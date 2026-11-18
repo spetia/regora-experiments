@@ -1,0 +1,37 @@
+G_s2_anneal: 4,902,912 params, lr 0.002, checkpoint 1500, K=3 S=6, 181 min; checkpoint loss 1.175, 1.170, 1.165
+identical-twin max |diff| 0; subset bytes {'all': 10774872, 'encodings': 1419748, 'idlelib': 1251734, 'toplevel': 4291202, 'asyncio': 519517, 'test': 743727}
+
+arm      anneal  100 anneal  200 anneal  400 long  100 long  200 long  400 long 1200 long 1600   (mean effect, loss)
+null8       -0.00013    +0.00029    +0.00029    -0.00028    +0.00070    +0.00015    -0.00177    +0.00027
+enc8        +0.00948    +0.01208    +0.01449    +0.01075    +0.01514    +0.01995    +0.02173    +0.01924
+enc2        +0.00191    +0.00279    +0.00329    +0.00257    +0.00333    +0.00537    +0.00487    +0.00449
+idle8       +0.00780    +0.01093    +0.01365    +0.01049    +0.01316    +0.01566    +0.01976    +0.02081
+top8        -0.00244    -0.00247    -0.00284    -0.00335    -0.00367    -0.00376    -0.00387    -0.00400
+async8      +0.00821    +0.01105    +0.01482    +0.00971    +0.01274    +0.01588    +0.02159    +0.02238
+test8       +0.00514    +0.00754    +0.01019    +0.00773    +0.00915    +0.01207    +0.01485    +0.01682
+
+arm      anneal  100 anneal  200 anneal  400 long  100 long  200 long  400 long 1200 long 1600   (seeds saved by pairing)
+null8            3.0         2.4         2.5         2.5         1.5         1.4         2.7         2.2
+enc8             6.8         4.2         4.1         2.2         1.8         2.8         1.9         2.4
+enc2            30.1        12.8         9.3         3.8         5.6         2.8         2.5         3.0
+idle8            2.6         3.0         3.4         2.3         2.6         1.1         1.7         2.4
+top8             2.1         1.7         3.9         1.8         1.9         1.2         2.4         1.5
+async8           3.1         2.8         4.9         1.8         2.5         1.3         2.2         1.9
+test8            2.3         5.7         4.2         1.2         2.2         2.0         1.7         1.9
+control SD across orders: anneal100: 0.0017 anneal200: 0.0016 anneal400: 0.0014 long100: 0.0035 long200: 0.0039 long400: 0.0036 long1200: 0.0029 long1600: 0.0017
+
+##### G1: a 200-step micro-anneal makes the paired comparison at least 4x cheaper than a 200-step branch at the training learning rate
+  geometric mean seeds saved over 7 data arms: anneal-200 3.8, constant-LR 200 2.4, ratio 1.57 -> REJECTED
+
+##### G2: the micro-anneal's ranking of the data changes agrees with the long continuation's
+  anneal-200       Spearman (proxy orders 0-2, truth 3-5) +0.89; swapped +0.89; mean +0.89 -> SUPPORTED
+  constant-LR 200  Spearman (proxy orders 0-2, truth 3-5) +0.86; swapped +0.89; mean +0.88
+  anneal-100       Spearman (proxy orders 0-2, truth 3-5) +0.89; swapped +0.86; mean +0.88
+  anneal-400       Spearman (proxy orders 0-2, truth 3-5) +0.96; swapped +0.96; mean +0.96
+  truth (long-1600, all pairs): null8 +0.00027, enc8 +0.01924*, enc2 +0.00449*, idle8 +0.02081*, top8 -0.00400*, async8 +0.02238*, test8 +0.01682*  (* established)
+
+##### G3: one paired micro-anneal (2 runs) gets the direction right at least twice as often as one unpaired pair of runs, and is wrong at most 10% of the time
+  anneal-200       wrong direction, paired 1.9% vs unpaired 2.8% over 6 arms with an established truth -> UNINFORMATIVE
+      per arm (paired/unpaired): enc8 0%/0%, enc2 0%/9%, idle8 0%/0%, top8 11%/8%, async8 0%/0%, test8 0%/0%
+  constant-LR 200  wrong direction, paired 4.6% vs unpaired 10.7% over 6 arms with an established truth
+      per arm (paired/unpaired): enc8 0%/0%, enc2 11%/34%, idle8 0%/0%, top8 11%/27%, async8 0%/0%, test8 6%/3%

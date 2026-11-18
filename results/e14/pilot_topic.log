@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]Generating train split:  86%|████████▌ | 103000/120000 [00:00<00:00, 1023156.04 examples/s]Generating train split: 100%|██████████| 120000/120000 [00:00<00:00, 1041621.01 examples/s]
+Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 7600/7600 [00:00<00:00, 884849.70 examples/s]
+[   172s] topic control         seed 12: accuracy 0.9270
+[   349s] topic lr_x0.5         seed 12: accuracy 0.9135
+[   526s] topic lr_x0.71        seed 12: accuracy 0.9205
+[   703s] topic lr_x1.41        seed 12: accuracy 0.9225
+[   880s] topic smoothing_0.05  seed 12: accuracy 0.9240
+[  1057s] topic smoothing_0.1   seed 12: accuracy 0.9260
+[  1201s] topic steps_200       seed 12: accuracy 0.9220
+[  1412s] topic steps_300       seed 12: accuracy 0.9220
+[  1591s] topic prompt          seed 12: accuracy 0.9155

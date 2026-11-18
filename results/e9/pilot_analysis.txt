@@ -1,0 +1,42 @@
+E9 pilots (development data: models tiny, base, mid, deep; seeds 11..13). Not test results.
+
+Agreement test x threshold on the 60 pilot cases without the capacity condition, 300-step probes.
+t = E8's t-test; sign = all 3 replicates agree in direction; each = sign, and every replicate beyond half the threshold.
+t     at 0.2: 49/60 | healthy 10/12 lr_high 10/12 lr_low 11/12 mild_high 6/12 mild_low 12/12
+t     at 0.3: 49/60 | healthy 10/12 lr_high 10/12 lr_low 11/12 mild_high 6/12 mild_low 12/12
+t     at 0.4: 49/60 | healthy 12/12 lr_high 10/12 lr_low 10/12 mild_high 5/12 mild_low 12/12
+t     at 0.5: 45/60 | healthy 12/12 lr_high 10/12 lr_low 8/12 mild_high 5/12 mild_low 10/12
+sign  at 0.2: 53/60 | healthy 8/12 lr_high 12/12 lr_low 11/12 mild_high 10/12 mild_low 12/12
+sign  at 0.3: 55/60 | healthy 10/12 lr_high 12/12 lr_low 11/12 mild_high 10/12 mild_low 12/12
+sign  at 0.4: 53/60 | healthy 12/12 lr_high 12/12 lr_low 10/12 mild_high 7/12 mild_low 12/12
+sign  at 0.5: 49/60 | healthy 12/12 lr_high 12/12 lr_low 8/12 mild_high 7/12 mild_low 10/12
+each  at 0.2: 53/60 | healthy 9/12 lr_high 12/12 lr_low 11/12 mild_high 9/12 mild_low 12/12
+each  at 0.3: 52/60 | healthy 10/12 lr_high 11/12 lr_low 11/12 mild_high 8/12 mild_low 12/12
+each  at 0.4: 51/60 | healthy 12/12 lr_high 11/12 lr_low 10/12 mild_high 6/12 mild_low 12/12
+each  at 0.5: 46/60 | healthy 12/12 lr_high 11/12 lr_low 8/12 mild_high 5/12 mild_low 10/12
+
+The frozen rule on pilot 2 (pilot 1 has no follow-through branches):
+deep: 9 of 9 (mean cost 1827)
+             healthy   lr_high    lr_low
+healthy            3         0         0
+lr_high            0         3         0
+lr_low             0         0         3
+
+mid: 9 of 9 (mean cost 1827)
+             healthy   lr_high    lr_low
+healthy            3         0         0
+lr_high            0         3         0
+lr_low             0         0         3
+
+mild_high: {'lr_high': 3, 'healthy': 3}; right at 100/200/300-step probes: [6, 6, 3] of 6
+mild_low: {'lr_low': 6}; right at 100/200/300-step probes: [4, 4, 6] of 6
+
+H1 mild LR faults (>= 0.70 right, <= 0.10 LR false alarms on healthy): 9 of 12, 0 of 6 false alarms: SUPPORTED
+H2 four conditions (>= 0.85 pooled, >= 0.75 per model): 18 of 18, worst model 100%: SUPPORTED
+H3 LR advice lowers loss 900 steps later (>= 0.80): 22 of 24: SUPPORTED
+
+Reported, not decisive
+E8's t-test in place of sign agreement: 24 of 30 (rule: 27)
+capacity cases read as: {'healthy': 3, 'lr_high': 2, 'lr_low': 1}
+wider-model lead at step 100, healthy: min -0.53 median -0.13 max +0.06
+wider-model lead at step 100, capacity: min -0.50 median -0.15 max +0.37

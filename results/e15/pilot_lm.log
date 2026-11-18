@@ -1,0 +1,5 @@
+[  1048s] lm healthy    seed 12: at checkpoint 1.2933 lean -0.0735
+[  1396s] lm low_and_noisy seed 12: at checkpoint 1.7284 lean +0.0362
+[  1743s] lm high_and_noisy seed 12: at checkpoint 2.7950 lean -0.3324
+[  2136s] lm heavy_decay seed 12: at checkpoint 1.3388 lean -0.0750
+[  2528s] lm low_and_decay seed 12: at checkpoint 1.7001 lean +0.0167

@@ -1,0 +1,29 @@
+# Same file in every regora repo. Hooks skip themselves when a repo has no matching files.
+# Install once per clone: uvx pre-commit install -t pre-commit -t pre-push
+repos:
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo fmt --check
+        language: system
+        types: [rust]
+        pass_filenames: false
+      - id: cargo-clippy
+        name: cargo clippy
+        entry: cargo clippy --all-targets -- -D warnings
+        language: system
+        types: [rust]
+        pass_filenames: false
+      - id: cargo-test
+        name: cargo test
+        entry: cargo test -q
+        language: system
+        types: [rust]
+        pass_filenames: false
+        stages: [pre-push]
+      - id: black
+        name: black
+        entry: uvx black@26.10.1
+        language: system
+        types: [python]

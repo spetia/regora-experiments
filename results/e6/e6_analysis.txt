@@ -1,0 +1,10 @@
+results/e3/e3.json: 9 configs, 8 seeds, 56 subsets; Optuna budget 5247 steps
+
+method                        compute   regret  P(best)
+regora schedule-aware(guard=200)    0.583   0.0062     0.88
+regora fixed-halving            0.444   0.0028     0.95
+optuna tpe-hyperband            0.578   0.0169     0.56
+optuna random-median            0.578   0.0117     0.68
+optuna grid-sha                 0.527   0.0074     0.83
+
+schedule-aware vs Optuna: NO ADVANTAGE by the pre-registered rule

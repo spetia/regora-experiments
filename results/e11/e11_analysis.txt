@@ -1,0 +1,56 @@
+Pairing at 300 steps (seeds saved = unpaired variance / paired variance)
+  lm     halve_lr          1.3x  (10 of 10 runs finite)
+  lm     double_lr         1.3x  (10 of 10 runs finite)
+  lm     weight_decay      3.7x  (10 of 10 runs finite)
+  lm     non-determinism / data-order SD: 0.5719; own data order, every 100 steps: 0.223 0.579 0.572 0.626 1.033 0.751 1.333 0.631 0.674 0.968 0.988 0.621 1.169 0.810 0.884
+  vision halve_lr          2.6x  (10 of 10 runs finite)
+  vision double_lr         2.0x  (10 of 10 runs finite)
+  vision weight_decay     12.0x  (10 of 10 runs finite)
+  vision non-determinism / data-order SD: 0.0000; own data order, every 100 steps: 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
+H1 pairing saves at least 2x seeds for every intervention on every task: NOT SUPPORTED
+H2 GPU non-determinism at most 0.1 of data-order noise on every task: NOT SUPPORTED
+
+Diagnosis (E9 rule, unchanged)
+  lm         eval_noise    healthy    lr_high     lr_low
+  eval_noise         10          0          0          0
+  healthy             0          0         10          0
+  lr_low              0          4          0          6
+  mild_high           0          0         10          0
+  mild_low            0          0         10          0
+  right on lr_low, mild_low, eval_noise: 16 of 30 (53%); mean cost 1483 steps
+
+  vision         eval_noise    healthy    lr_high     lr_low
+  eval_noise          9          0          1          0
+  healthy             0          0         10          0
+  lr_low              0         10          0          0
+  mild_high           0          0         10          0
+  mild_low            0          0         10          0
+  right on lr_low, mild_low, eval_noise: 9 of 30 (30%); mean cost 1487 steps
+
+H3 LR-too-low and noisy-evaluation cases right (>= 85% pooled, >= 75% per task): 25 of 60 (42%), worst task 30%: NOT SUPPORTED
+H4 healthy runs given either diagnosis (<= 10%): 0 of 20 (0%): SUPPORTED
+H5 doubling the LR, when advised, is ahead 900 steps later (>= 80%): 6 of 6 (100%): SUPPORTED
+
+H6 on healthy runs a halved LR is ahead at 300 steps (>= 50%) and that lead mostly does not last to the end (<= 50%): ahead 20 of 20 (100%), still ahead 20 of 20 (100%): NOT SUPPORTED
+
+Reported, not decisive
+E9's suggested repair (advised branch must beat control on all 3 data orders), truth -> reading: {('healthy', 'lr_high'): 20, ('lr_low', 'lr_low'): 11, ('lr_low', 'lr_high'): 20, ('eval_noise', 'eval_noise'): 19, ('lr_low', 'healthy'): 9, ('eval_noise', 'lr_high'): 1}
+healthy runs told 'LR too high': 20 of 20 (100%)
+LR 3x read as: {'lr_high': 20}
+doubling the LR, when advised, ahead at the final reading: 6 of 6 (100%)
+halve_lr: runs whose sign at each 100 steps matches the final sign, of 80: [38, 39, 54, 56, 56, 59, 59, 64, 68, 71, 74, 67, 71, 70, 80]
+double_lr: runs whose sign at each 100 steps matches the final sign, of 80: [41, 41, 58, 58, 56, 59, 57, 57, 58, 61, 63, 71, 62, 69, 80]
+lm: weight-decay effect at 300 steps +0.00096 +/- 0.00032 (mean of 10 checkpoints)
+vision: weight-decay effect at 300 steps -0.00512 +/- 0.01785 (mean of 10 checkpoints)
+
+Deterministic kernels, healthy runs
+Pairing at 300 steps (seeds saved = unpaired variance / paired variance)
+  lm     halve_lr          1.9x  (10 of 10 runs finite)
+  lm     double_lr         2.0x  (10 of 10 runs finite)
+  lm     weight_decay      3.9x  (10 of 10 runs finite)
+  lm     non-determinism / data-order SD: 0.0000; own data order, every 100 steps: 0.000 0.000 0.000
+  vision halve_lr          2.6x  (10 of 10 runs finite)
+  vision double_lr         2.0x  (10 of 10 runs finite)
+  vision weight_decay     12.0x  (10 of 10 runs finite)
+  vision non-determinism / data-order SD: 0.0000; own data order, every 100 steps: 0.000 0.000 0.000
+H7 with deterministic kernels both limits hold on every task (>= 2x, <= 0.1): NOT SUPPORTED

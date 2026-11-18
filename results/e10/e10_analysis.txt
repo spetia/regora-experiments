@@ -1,0 +1,36 @@
+lanky (10 seeds), margin 0.0; test loss, controller minus baseline (negative is better)
+  vs halving over constant +0.0574 +/- 0.0269   (baseline seed SD 0.0375)
+  vs halving over cosine   +0.0306 +/- 0.0373   (baseline seed SD 0.0403)
+  start 0.0005  vs default start +0.0253 +/- 0.0411
+  start 0.016   vs default start +0.0846 +/- 0.0425
+  vs best constant in hindsight (lr 0.004, 6x compute) +0.0563 +/- 0.0274; halving picked {0.004: 9, 0.002: 1}
+  vs best cosine in hindsight (lr 0.004, 6x compute) +0.0050 +/- 0.0523; halving picked {0.002: 5, 0.004: 5}
+  final LR from default start: [3.125e-05, 6.25e-05, 0.000125, 0.000125, 0.000125, 0.000125, 0.000125, 0.000125, 0.00025, 0.0005]
+  median LR by segment: [0.002, 0.004, 0.004, 0.002, 0.001, 0.0005, 0.00025, 0.00025]
+  runs that ended short of 2400 steps (any start): 0
+
+slim (10 seeds), margin 0.0; test loss, controller minus baseline (negative is better)
+  vs halving over constant -0.0319 +/- 0.0418   (baseline seed SD 0.0502)
+  vs halving over cosine   -0.0103 +/- 0.0264   (baseline seed SD 0.0248)
+  start 0.0005  vs default start +0.0385 +/- 0.0245
+  start 0.016   vs default start +0.0185 +/- 0.0301
+  vs best constant in hindsight (lr 0.008, 6x compute) -0.0376 +/- 0.0393; halving picked {0.004: 4, 0.008: 6}
+  vs best cosine in hindsight (lr 0.004, 6x compute) -0.0130 +/- 0.0182; halving picked {0.004: 5, 0.008: 5}
+  final LR from default start: [6.25e-05, 0.000125, 0.000125, 0.000125, 0.000125, 0.000125, 0.00025, 0.0005, 0.0005, 0.0005]
+  median LR by segment: [0.002, 0.004, 0.006, 0.003, 0.002, 0.001, 0.0005, 0.00025]
+  runs that ended short of 2400 steps (any start): 0
+
+stout (10 seeds), margin 0.0; test loss, controller minus baseline (negative is better)
+  vs halving over constant +0.0815 +/- 0.0454   (baseline seed SD 0.0379)
+  vs halving over cosine   +0.0277 +/- 0.0444   (baseline seed SD 0.0561)
+  start 0.0005  vs default start -0.0193 +/- 0.0800
+  start 0.016   vs default start +0.1727 +/- 0.0704
+  vs best constant in hindsight (lr 0.002, 6x compute) +0.0790 +/- 0.0458; halving picked {0.002: 9, 0.001: 1}
+  vs best cosine in hindsight (lr 0.002, 6x compute) +0.0218 +/- 0.0491; halving picked {0.002: 8, 0.001: 2}
+  final LR from default start: [3.125e-05, 6.25e-05, 6.25e-05, 6.25e-05, 0.000125, 0.00025, 0.00025, 0.00025, 0.00025, 0.004]
+  median LR by segment: [0.002, 0.002, 0.002, 0.001, 0.0005, 0.00025, 0.00025, 0.000125]
+  runs that ended short of 2400 steps (any start): 0
+
+H1 no worse than halving, on every model: NOT SUPPORTED
+H2 better than halving, on at least 2 of 3 models: NOT SUPPORTED
+H3 the starting LR does not matter, on every model: NOT SUPPORTED

@@ -1,0 +1,15 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/392702 [00:00<?, ? examples/s]Generating train split:  29%|██▉       | 114000/392702 [00:00<00:00, 1133002.04 examples/s]Generating train split:  67%|██████▋   | 265000/392702 [00:00<00:00, 1349567.01 examples/s]Generating train split: 100%|██████████| 392702/392702 [00:00<00:00, 1395631.36 examples/s]
+Generating validation_matched split:   0%|          | 0/9815 [00:00<?, ? examples/s]Generating validation_matched split: 100%|██████████| 9815/9815 [00:00<00:00, 1285026.03 examples/s]
+Generating validation_mismatched split:   0%|          | 0/9832 [00:00<?, ? examples/s]Generating validation_mismatched split: 100%|██████████| 9832/9832 [00:00<00:00, 1346603.87 examples/s]
+Generating test_matched split:   0%|          | 0/9796 [00:00<?, ? examples/s]Generating test_matched split: 100%|██████████| 9796/9796 [00:00<00:00, 1399244.04 examples/s]
+Generating test_mismatched split:   0%|          | 0/9847 [00:00<?, ? examples/s]Generating test_mismatched split: 100%|██████████| 9847/9847 [00:00<00:00, 1388746.18 examples/s]
+[   228s] nli control         seed 12: accuracy 0.7980
+[   455s] nli lr_x0.5         seed 12: accuracy 0.8040
+[   682s] nli lr_x0.71        seed 12: accuracy 0.8025
+[   910s] nli lr_x1.41        seed 12: accuracy 0.7445
+[  1137s] nli smoothing_0.05  seed 12: accuracy 0.7895
+[  1364s] nli smoothing_0.1   seed 12: accuracy 0.7890
+[  1548s] nli steps_200       seed 12: accuracy 0.7610
+[  1690s] nli steps_300       seed 12: accuracy 0.7660
+[  1792s] nli prompt          seed 12: accuracy 0.7840

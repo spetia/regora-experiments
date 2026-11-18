@@ -1,0 +1,2 @@
+{"signals": {"0": "val_loss"}, "interventions": ["SetLearningRate", "SetWeightDecay", "SetGradClip"], "live_apply": [],
+ "checkpoints": true, "deterministic_replay": true, "resource_telemetry": false}

@@ -1,0 +1,3 @@
+wd0.1     effect +0.0004 sd_pair 0.0002 effect/sd +2.38 per-ckpt [0.0011, 0.0001, 0.0002] MDE(n=8) 0.0002 detectable: True
+wd1.0     effect +0.0067 sd_pair 0.0017 effect/sd +4.03 per-ckpt [0.0133, 0.0026, 0.0043] MDE(n=8) 0.0017 detectable: True
+clip0.25  effect +0.0063 sd_pair 0.0035 effect/sd +1.80 per-ckpt [0.0093, 0.0029, 0.0069] MDE(n=8) 0.0035 detectable: True
