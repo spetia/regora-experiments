@@ -3,7 +3,10 @@
 Each study's plan (`studies/*/PLAN*.md`, or the docstring of `run.py`) was committed to the private research repository
 (`regora-ai/regora-experiments`) before its results. This repository is a squashed snapshot, so those hashes do not resolve
 here; the table is copied from the private history (author-recorded local commit times, 2026-11, same day unless stated).
-To verify a plan, ask for read access to the private repository or for a bundle of its history.
+Verifying a plan: the full history is held as a git bundle (`regora-experiments-history.bundle`, SHA-256
+`f9e341779e19a4f15a06bbf909c9f9215898da57a18d766e8706b76fb0167ea6`, private `main` at `6a279f999891430da48fe2c55acd1076024e8022`). It is not published here because commit metadata carries both authors' email
+addresses; it is available to reviewers on request. `git bundle verify` then `git show <hash>:<path>` reproduces any
+plan as committed. Hashes beginning `0e0e85d` to `6a279f9` in the tables are in that bundle.
 
 | Study | Plan commit | Plan time | Results commit | Results time |
 |---|---|---|---|---|
@@ -43,3 +46,11 @@ Caveats. The scaling stages D to H of 11-16 carry identical commit times (12:04)
 was pushed in one batch, so for stages F to H only the commit order, not the clock, shows plan before result. E0 and E7b
 were not registered before their data in a separate commit. E13 is a replay of recorded data; its plan and results are one
 minute apart.
+
+Plan files changed after registration. Comparing each plan file's blob at its plan commit with the final snapshot, four
+differ: `e7_diagnosis/run.py` (refactored into a `main()` function in the E7 results commit `38d3f5c`),
+`e8_label_free/run.py` (the tuning helper gained a `lrs` argument, in the E9 commit `f30a515`),
+`e11_scale/run.py` (a `train` options pass-through added for E15, in `290cd84`) and `e15_mixed_causes/PLAN.md` (a dated
+`Stopped` note was appended). I read these diffs: none touches a rule or threshold. All other plan files
+(`PLAN.md` and `run.py` of E3 to E16 and the scaling study that existed at their plan commit) are byte-identical.
+Studies E0 to E2 predate the per-study folder layout, so their plan files moved and were not compared this way.
