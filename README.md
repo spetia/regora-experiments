@@ -36,7 +36,12 @@ uv run python -m tinygpt          # self-check
 uv run python -m scale            # self-check
 ```
 
-Write-ups are in `research/experiment-results` in the main repo. Dependencies are pinned there in `pyproject.toml` and `uv.lock`.
+Write-ups are in `writeups/`; dependencies are pinned in `pyproject.toml` and `uv.lock`.
+
+**What can be re-run.** The analysis scripts and replays (`analyze.py`, `replay.py`, `heldout.py`, `scaling_curve/analyze*.py`)
+re-run on the shipped `results/`. Re-running the training itself is not possible from this repository alone: `tinygpt/trainer.py`
+imports the Regora harness (`regora` Python module) and E6 needs `regora-cli`, both in a private repository. `PREREGISTRATION.md`
+lists each plan's commit hash and time from the private history.
 
 Part of [regora-ai/regora](https://github.com/regora-ai/regora).
 
@@ -47,5 +52,5 @@ All content in this repository (plans, code, data and write-ups) is released und
 (CC BY-NC 4.0); the full text is in `LICENSE`. Cite the accompanying paper, "Is the Change Real? Paired Verdicts, Early
 Stopping, and the Limits of Run Selection for ML Training Changes" (Spetia SI Labs, 2026).
 
-This repository is a snapshot of the research repository's `main` branch; the pre-registration plans (`PLAN*.md`,
-`run.py` docstrings) are the committed versions at snapshot time.
+This repository is a squashed snapshot of the research repository's `main` branch. Plans are the versions committed before
+each run; see `PREREGISTRATION.md` for hashes and times from the private history.

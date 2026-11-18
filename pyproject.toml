@@ -1,0 +1,22 @@
+# uv manages the one Python environment for the whole workspace: `uv sync` creates .venv and builds the binding.
+[project]
+name = "regora-workspace"
+version = "0.0.0"
+description = "Python environment for Regora: the PyO3 binding and the research experiments"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "regora",
+    "torch==2.15.0",
+    "numpy==2.5.4",
+    "scipy==1.18.1",
+    "optuna>=5.0.0",
+]
+
+[dependency-groups]
+dev = ["black==26.10.1", "pre-commit==4.7.0", "maturin==1.16.0"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+regora = { path = "python/regora-py" }
